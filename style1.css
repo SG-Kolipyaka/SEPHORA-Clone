@@ -43,14 +43,31 @@ a{
     height: 5%;
     width: 80%;
    
-   padding-left: 10%;
+   padding-left: 8%;
     align-items: center;
 }
 #searlabel>div:nth-child(1)>img{
     height: 40px;
 }
+#searlabel>div>input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid grey;
+    height: 20px;
+    width: 40%;
+    
+}
+#searlabel>div>input::placeholder{
+    font-size: 15px;
+}
+#searlabel>div>svg{
+    width: 5%;
+}
 #searlabel>div:nth-child(2)>h1{
-font-size: 50px;
+font-size: 45px;
+margin-left: -200px;
+
 
 
 }
@@ -73,6 +90,7 @@ font-size: 50px;
 
 .menubar{
     text-align: center;
+   position: relative;
     
 }
 .menubar>ul{
@@ -182,4 +200,164 @@ width: 15%;
 }
 #fomu>div>h3{
     text-align: center;
+}
+
+/* ========================================================= */
+#prod50{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 18px;
+    width: 90%;
+    margin: auto;
+}
+#prod50>div{
+    border: solid red;
+    margin-top: 18px;
+}
+/* ========================================================= */
+#button1>button{
+    text-align: center;
+    margin-top: 20px;
+    width: 12%;
+    height: 55px;
+    font-size: 17px;
+    background-color:darkolivegreen;
+    border: none;
+    color: black;
+
+}
+#button1>button:hover{
+    background-color: palevioletred;
+
+}
+#button1{
+
+    margin: auto;
+    text-align: center;
+}
+
+/* ========================================================= */
+#susc{
+    background-color: bisque;
+    width: 100%;
+    height: 175px;
+    text-align: center;
+    margin-top: -1px;
+    
+   
+}
+
+#button2{
+    padding-top: 22px;
+
+}
+#button2>input{
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+}
+#button2>button{
+    text-align: center;
+    width: 12%;
+    height: 57px;
+    background-color: black;
+    color: azure;
+    font-size: 20px;
+    margin-left: -3px;
+}
+#button2>button:hover{
+    background-color:palevioletred;
+    color: black;
+}
+#button2>input::placeholder{
+   font-size: 20px;
+
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* ========================================================= */
+#descc{
+    text-align: center;
+    margin: auto;
+    width: 88%;
+}
+#descc>p{
+    color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ========================================================= */
+#social{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+#social>a{
+    padding: 25px;
+    font-size: 20px;
+    color: black;
+
+}
+#social>a:hover{
+    color:  palevioletred;
+}
+
+/* ========================================================= */
+#inst{
+    width: 30%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+#inst>svg{
+    width: 7%;
+    color: aqua;
+
+}
+
+#inst>a:hover{
+    color:  palevioletred;
+}
+
+/* ========================================================= */
+#social1{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+#social1>a{
+    padding: 6px;
+    font-size: 15px;
+    color: black;
+
+}
+#social1>a:hover{
+    color:  palevioletred;
+}
+/* ========================================================= */
+#alllink{
+width: 100%;
+text-align: center;
+margin: auto;
+
+}
+
+#social11,#sociall2,#social13,#social14,#social15,#social16,#social17{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+
+}
+#social11>a,#social12>a,#social13>a,#social14>a,#social15>a,#social16>a,#social17>a{
+    padding: 6px;
+    font-size: 15px;
+    color: darkslategray;
+    
+
+}
+#social11>a:hover,#social12>a:hover,#social13>a:hover,#social14>a:hover,#social15>a:hover,#social16>a:hover,#social17>a:hover{
+    color:  palevioletred;
 }
