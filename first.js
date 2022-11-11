@@ -37,7 +37,8 @@ function displaycard(data){
        
         div.append(imageprod,idd,title,desc,prod)
         
-        document.querySelector("#prod50").append(div)
+       document.querySelector("#prod50").append(div)
+
      } )
     
     //}
@@ -95,4 +96,59 @@ function myfunbut(){
 // // localStorage.setItem("subs",JSON.stringify(arr1))
 // console.log(arr2)
    
+// }
+// totalprice=arr2.reduce((acc,el)=>acc+el.price,0)
+// console.log(totalprice)
+
+// let pr=document.querySelector("h2").innerText="Total="+totalprice
+
+
+{/* <div class="submenu1">
+<br>
+<ul>
+<li><a href=""><b>Clothing</b></a> </li>
+
+<li><a href="">Women's</a> </li>
+<li><a href="">MEN's</a> </li>
+
+</ul>
+</div> */}
+
+brand=document.querySelector("#brand").addEventListener("click",myfunbrand)
+
+function myfunbrand(){
+  let hei= document.querySelector(".menubar")
+  hei.style.height="150px"
+    div=document.createElement("div")
+    ul11=document.createElement("ul")
+    li1=document.createElement("li")
+    li2=document.createElement("li")
+    li3=document.createElement("li")
+    bol=document.createElement("b")
+    bol.innerText="Clothing"
+    li1.append(bol)
+    br=document.createElement("br")
+    br2=document.createElement("br")
+
+    a1=document.createElement("a")
+    a1.innerText="WOMEN's"
+    a1.setAttribute("href","womens.html")
+    a1.style.color="brown"
+    a2=document.createElement("a")
+    a2.innerText="MEN's"
+
+    li2.append(a1)
+    li3.append(a2)
+    ul11.append(br2,li1,br,li2,li3)
+    div.append(ul11)
+    div.setAttribute("class","submenu1")
+    document.querySelector("#brand").append(div)
+
+}
+
+// document.querySelector(".prodit>button").addEventListener("click",myfun)
+// // function myfun(){
+//     h1=document.createElement("h1")
+//     h1.innerText="hiiiiiiii"
+//    document.querySelector("#proid122").append(h1)
 // }
