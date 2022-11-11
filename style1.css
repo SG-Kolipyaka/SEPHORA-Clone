@@ -91,7 +91,19 @@ margin-left: -200px;
 .menubar{
     text-align: center;
    position: relative;
+  
+   width: 100%;
     
+}
+.submenu1{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100px;
+   
+
+}
+.submenu1>ul{
+    list-style-type: none;
 }
 .menubar>ul{
     display: inline-flex;
@@ -360,4 +372,125 @@ margin: auto;
 }
 #social11>a:hover,#social12>a:hover,#social13>a:hover,#social14>a:hover,#social15>a:hover,#social16>a:hover,#social17>a:hover{
     color:  palevioletred;
+}
+/* ================================================================== */
+#social12{
+
+    width: 100%;
+}
+#social12>a{
+    padding: 6px;
+    font-size: 15px;
+    color: black;
+
+}
+#social12>a:hover{
+    color:  palevioletred;
+}
+/* ================================================================== */
+#sel1{
+    text-align: right;
+}
+#sel1>label{
+    font-size: 20px;
+}
+#sel1>select{
+    width: 15%;
+    font-size: 15px;
+    height: 40px;
+    margin-right: 70px;
+}
+/* ================================================================== */
+#filr1{
+
+    width: 90%;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#filter{
+    height: 700px;
+    width: 18%;
+   
+    text-align: center;
+}
+#filter>select{
+    width: 80%;
+    font-size: 12px;
+    height: 40px;
+}
+/* =========================================== */
+
+#prods{
+   
+    width: 80%;
+    height: 2000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(30,1fr);
+    gap: 10px;
+}
+.prodit{
+   
+
+    text-align: center;
+}
+.prodit>img{
+    height: 60%;
+}
+.prodit>button{
+    width: 90px;
+    height: 40px;
+    background-color: darkgoldenrod;
+    border: none;
+}
+
+#proid122{
+   
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#div1{
+
+    height: 400px;
+    width: 60%;
+}
+#div2{
+   
+    height: 300px;
+    text-align: left;
+    width: 30%;
+}
+#div2>div{
+    display: flex;
+    align-items: center;
+    border: solid goldenrod;
+   height: 120px;
+   text-align: center;
+width: 95%;
+}
+#hh2{
+    text-align: center;
+    height: 100px;
+}
+#hh2>h1{
+    
+    color: brown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#hh2>img{
+    width: 10%
+}
+
+#but20{
+    text-align: center;
+}
+#but20>button{
+    width: 150px;
+    height: 40px;
+    background-color: darkgoldenrod;
+    border: none;
 }
