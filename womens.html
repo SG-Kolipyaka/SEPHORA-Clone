@@ -45,7 +45,7 @@
 
             
         <img src="C:\Users\Sumit\Desktop\inquisitive-toy-7122\label\heart.png" alt="">
-           <h2>|</h2> <img src="C:\Users\Sumit\Desktop\inquisitive-toy-7122\label\bag.png" alt="">
+           <h2>|</h2> <img src="C:\Users\Sumit\Desktop\inquisitive-toy-7122\label\bag.png" alt=""><a href="cart.html"> Cart</a>
           
            <h2><h2>|</h2> <img src="C:\Users\Sumit\Desktop\inquisitive-toy-7122\label\login.png" alt=""><a href=""> Login </a></h2>
 
@@ -76,15 +76,22 @@
     <a href="https://sephora.nnnow.com/termsconditions">Women Fragrance</a>
 </div>
 
+<!-- DAVIDOFF
+Cool Water Parfum Man
+Rs. 4,200 -->
+<!-- CALVIN KLEIN FRAGRANCES
+Eternity Man Eau De Perfum
+Rs. 3,650 -->
+
 
 <div id="sel1">
     <label for=""><b>SORT:</b></label>
 <select id="sell" onchange="Regions()">
     <option value="Popularaty">Popularaty</option>
     <option value="White Teal">White Teal</option>
-    <option value="Price: Low to High">Price: Low to High</option>
-    <option value="Price: Hign to Low">Price: Hign to Low</option>
-    <option value="Discount">Discount</option>
+    <option value="DAVIDOFF">DAVIDOFF</option>
+    <option value="BURBERRY">BURBERRY</option>
+    <option value="CALVIN KLEIN FRAGRANCES">CALVIN KLEIN FRAGRANCES</option>
 </select>
 </div>
 
@@ -117,9 +124,10 @@
     <option value="HTL">HTL</option>
 </select>
 <br> <br>
-<select onchange="Sort()">
-    <option value="LTH">Price</option>
-    <option value="HTL">HTL</option>
+<select id="seld" onchange="price()">
+    <option value="">Price</option>
+    <option value="Price Low to High">Price Low to High</option>
+    <option value="Price High to Low">Price Hign to Low</option>
 </select>
 <br> <br>
 <select onchange="Sort()">

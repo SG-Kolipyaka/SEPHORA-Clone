@@ -425,7 +425,7 @@ margin: auto;
 #prods{
    
     width: 80%;
-    height: 2000px;
+    height: 3000px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(30,1fr);
@@ -475,6 +475,10 @@ width: 95%;
 #hh2{
     text-align: center;
     height: 100px;
+}
+#hh22{
+    text-align: center;
+    height: 50px;
 }
 #hh2>h1{
     
