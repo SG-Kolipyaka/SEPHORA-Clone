@@ -3,7 +3,7 @@
     // h1.innerText="hiiiiiiii"
   
 
-   let arr2=JSON.parse(localStorage.getItem("subss"))||[]
+   let arr2=JSON.parse(localStorage.getItem("subs"))||[]
 
 
 //    document.querySelector("#proid122").append(arr1.img1)

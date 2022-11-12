@@ -64,7 +64,7 @@ function displaycard(data){
 
 
 but1=document.querySelector("#but").addEventListener("click",myfunbut)
-let arr1=JSON.parse(localStorage.getItem("subs"))||[]
+let arr1=JSON.parse(localStorage.getItem("subsb"))||[]
 
 
 arr2=[]
@@ -87,7 +87,7 @@ function myfunbut(){
       })
       arr1.push(obj)
       alert("Suscribe Successful \n latest products will be sent on your email:"+impu)
-      localStorage.setItem("subs",JSON.stringify(arr1))
+      localStorage.setItem("subsb",JSON.stringify(arr1))
 
 }
 // function myfunbut(arr2){
