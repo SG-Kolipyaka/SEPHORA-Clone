@@ -1,14 +1,16 @@
 // let bag=[]
 // let cartitem=JSON.parse(localStorage.getItem("cart"))||[]
-let url ="https://636c99f691576e19e30fb69c.mockapi.io/Products"
-fetch(url)
-.then((res) => res.json())
-.then((data) => {
-bag=data
-console.log(data);
-displaycard(data)
-});
+// let url ="https://636c99f691576e19e30fb69c.mockapi.io/Products"
+// fetch(url)
+// .then((res) => res.json())
+// .then((data) => {
+// bag=data
+// console.log(data);
+// displaycard(data)
+// });
 
+let arr4=JSON.parse(localStorage.getItem("hotprod"))||[]
+displaycard(arr4)
 
 
 function displaycard(data){
@@ -18,24 +20,24 @@ function displaycard(data){
         let div=document.createElement("div")
      
         let imageprod=document.createElement("img")
-        imageprod.setAttribute("src",element.avatar)
+        imageprod.setAttribute("src",element.tname3)
 
         let idd=document.createElement("h2")
         idd.innerText=element.id
 
         let title=document.createElement("h2")
-        title.innerText=element.name
+        title.innerText=element.tname
 
 
         let desc=document.createElement("p")
-        desc.innerText=element.Description
+        desc.innerText=element.tname1
 
-        let prod=document.createElement("h3")
-        prod.innerText=element.Category
+        // let prod=document.createElement("h3")
+        // prod.innerText=element.Category
       
       
        
-        div.append(imageprod,idd,title,desc,prod)
+        div.append(imageprod,title,desc)
         
        document.querySelector("#prod50").append(div)
 
