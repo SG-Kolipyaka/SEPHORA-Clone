@@ -1,10 +1,10 @@
 
-    // h1=document.createElement("h1")
+    // h1=document.createElement("h1")  
     // h1.innerText="hiiiiiiii"
   
 
-   let arr2=JSON.parse(localStorage.getItem("subs"))||[]
-
+   let arr2=JSON.parse(localStorage.getItem("subbb"))||[]
+   let cartitems=JSON.parse(localStorage.getItem("cartproducts"))||[]
 
 //    document.querySelector("#proid122").append(arr1.img1)
 //   imm= document.querySelector("#proid122>img").src=arr1.img
@@ -24,6 +24,16 @@ let p=document.createElement("p").innerText=ele.tname1
 let h5=document.createElement("h5").innerText=ele.tname2
 
 let hw=document.createElement("h3").innerText="COLOR : No Color"
+
+btn=document.querySelector("#but20>button")
+
+
+
+
+btn.addEventListener("click",function(){
+    cartitems.push(ele)
+    localStorage.setItem("cartproducts",JSON.stringify(cartitems))
+})
 
 
 h3=document.createElement("h3").innerText="IMPORTANT"

@@ -498,3 +498,12 @@ width: 95%;
     background-color: darkgoldenrod;
     border: none;
 }
+
+#prod50>div>img{
+    width: 100%;
+    
+}
+#prod50>div{
+    text-align: center;
+    border: none;
+}

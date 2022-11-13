@@ -1,7 +1,8 @@
-document.querySelector(".prodit>a").addEventListener("click",myfunu)
+
 let arr1=JSON.parse(localStorage.getItem("subs"))||[]
 let cartitems=JSON.parse(localStorage.getItem("cartproducts"))||[]
 
+arr3=[]
 
 function mytable(obj){
     document.querySelector("#prods").innerHTML = "";
@@ -12,6 +13,16 @@ function mytable(obj){
         obj.forEach(function(elem){
             let aa=document.createElement("a")
             aa.setAttribute("href","product.html")
+
+            aa.addEventListener("click",function(){
+                arr3.push(elem)
+                localStorage.setItem("subbb",JSON.stringify(arr3))
+            })
+              
+
+
+
+
             let div=document.createElement("div")
             div.setAttribute("class","prodit")
     
@@ -52,25 +63,32 @@ br8=document.createElement("br")
     mytable(arr1)
 
 // ==============================================================
-let arr2=JSON.parse(localStorage.getItem("subs"))||[]
-function myfunu(){
-    img1=document.querySelector(".prodit>a>img").src
-    a=document.querySelector(".prodit>h4").innerText 
-  b=  document.querySelector(".prodit>p").innerText 
-  c=  document.querySelector(".prodit>h5").innerText
+// let arr3=JSON.parse(localStorage.getItem("subb"))||[]
+// arr3=[]
+// document.querySelector(".prodit>a").addEventListener("click",myfunu)
+// function myfunu(arr1){
+//  arr1.forEach(function(ele){
+//     img1=document.querySelector(".prodit>a>img").src
+//     a=document.querySelector(".prodit>h4").innerText 
+//   b=  document.querySelector(".prodit>p").innerText 
+//   c=  document.querySelector(".prodit>h5").innerText
+// img1=ele.tname3
+// a=ele.tname
+// b=ele.tname2
+// c=ele.tname4
+// obj1={
+//    img1, a,b,c
 
-obj1={
-   img1, a,b,c
+// }
+// arr3.push(obj)
+// console.log(arr3)
 
-}
-arr2.push(obj)
-console.log(arr2)
-
-    localStorage.setItem("subs",JSON.stringify(arr2))
+//     localStorage.setItem("subb",JSON.stringify(arr3))
 // document.querySelector(".prodit").innerText=b
+//  })
 
-}
-
+// }
+// myfunu(arr1)
 
 // ======================================================
 
